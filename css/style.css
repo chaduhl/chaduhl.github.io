@@ -6,11 +6,12 @@
 
 .profile{
   text-align: center;
+  color: white
 }
 
 img.profile{
   border-radius: 50%;
-  height: 100px;
+  height: 250px;
   display: block;
   margin-right:auto;
   margin-left:auto;
