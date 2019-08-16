@@ -4,24 +4,19 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
 
-.container-fluid{
-  height:100vh;
+body{
+  background-color:#f0f0ee;
+}
+
+h1 {
+  font-family: 'acumin-pro', sans-serif;
+  font-weight:100;
+  font-style:italic;
+  font-size:8em;
+  text-align:center;
+  font-kerning: none;
 }
 
 .profile{
-  text-align: center;
-  color: white
-}
-
-img.profile{
-  border-radius: 50%;
-  height: 250px;
-  display: block;
-  margin-right:auto;
-  margin-left:auto;
-  margin-top:150px;
-}
-
-.container-fluid.home-bg{
-  background: url('/img/bg-dark.png') top right fixed;
+  color: #9c9c9b;
 }
