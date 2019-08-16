@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
 
+.container-fluid{
+  height:100%;
+}
+
 .profile{
   text-align: center;
   color: white
