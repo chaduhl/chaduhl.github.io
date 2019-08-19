@@ -3,11 +3,10 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
- @import url('https://fonts.googleapis.com/css?family=Montserrat|Lexend+Mega&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Karla|Lato&display=swap');
 
 body{
-  background-color:#f0f0ee;
+  background-color:#f7f7f6;
 }
 
 a,
@@ -18,28 +17,71 @@ a:active{
     text-decoration: none;
 }
 
+a.li {
+  color:black;
+}
+
 h1:hover, a:hover {
     color:#9c9c9b;
 }
 
 h1 {
-  font-family: 'Lexend Mega', sans-serif;  font-weight:100;
+  font-family: 'Karla', sans-serif;  font-weight:100;
   font-size:3em;
-  text-align:center;
-  color:black;
+  color:black
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:400;
-  font-size:1.5em;
-  text-align:center;
+  font-family: 'Karla', sans-serif;
+  font-weight:bold;
+  font-size:2em;
 }
 
-.nav{
-  font-family: 'Montserrat', sans-serif;
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-size:1.5em;
+  font-weight:300;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+
+.line {
+  margin: 35px 0px 35px;
+  height:3px;
+  width:150px;
+  background-color:#1285d3;
+}
+
+/*!
+ *  NAVIGATION
+ */
+
+.nav-wrap {
+  width:100%;
+  display:block;
+  padding:50px;
+  vertical-align: middle;
+}
+
+.nav-wrap a {
+  display:inline-block;
+  position:relative;
+}
+
+ul.navi {
+  display:inline-block;
+  position:relative;
+  float:right;
+}
+
+.navi{
+  font-family: 'Lato', sans-serif;
   font-weight:200;
   font-size:.85em;
+  color:black;
 }
 
 ul {
@@ -56,4 +98,52 @@ ul > li{
 
 ul li a{
   color:black;
+}
+
+/*!
+ *  SALUTATION
+ */
+.salutation {
+  text-align:center;
+  display:block;
+  margin-top:100px;
+  margin-bottom:150px;
+}
+
+/*!
+ *  ABOUT
+ */
+.intro {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  display:block;
+}
+
+.btn-resume {
+  background-color: #1285d3;
+}
+
+a.btn-resume {
+  color:white;
+}
+
+/*!
+ *  PORTFOLIO
+ */
+
+.text-wrapper {
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  padding: 140px 40px 110px;
+  background-color: rgba(36, 36, 36, 0.6);
+  color: #fff;
+  text-align: center;
+}
+
+.wilcox {
+  background-image: url('/Users/chaduhl/Documents/chaduhl.github.io/img/wilcox_home.png');
+  background-size: cover;
 }
