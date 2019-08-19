@@ -158,6 +158,16 @@ a.btn-resume {
   color:white;
 }
 
+ul.social-menu {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+ul.social-menu li{
+  font-size: 2em;
+  margin:0 15px 0;
+}
+
 /*!
  *  PORTFOLIO
  */
