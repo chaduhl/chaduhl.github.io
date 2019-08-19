@@ -16,6 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
 
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/1d285c686e.js"></script>
@@ -37,11 +38,18 @@
   <body>
 
     <!-- Page Content -->
-    <div class="nav-wrap">
+    <div class="container-fluid nav-wrap">
       <a href="http://chaduhl.github.io/"><h1>CHAD UHL</h1></a>
+      <a href="javascipt:void(0);" class="icon" onclick="customDropdown()">
+        <i class="fas fa-bars"></i>
+      </a>
+      <div id="mobile-nav">
+        <a href="#">PORTFOLIO</a>
+        <a href="/about.html">ABOUT</a>
+      </div>
       <ul class="navi">
-        <li><a href="/index.html">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="/about.html">ABOUT</a></li>
       </ul>
     </div>
 
@@ -90,18 +98,17 @@
     </div>
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-lg-6 post1">
-          <img src="https://folksmak.files.wordpress.com/2019/08/peach-feature.jpg" class="img-responsive"/>
+        <div class="col-lg-6 posts post1">
         </div>
-        <div class="col-lg-3 post2">
-          <img src="https://folksmak.files.wordpress.com/2019/08/img_3967.jpg" class="img-responsive"/>
+        <div class="col-lg-3 posts post2">
         </div>
-        <div class="w-100"><br></div>
-        <div class="col-lg-3 post 3">
-          <img src="https://folksmak.files.wordpress.com/2019/08/img_3967.jpg" class="img-responsive"/>
+        <div class="w-100"></div>
+        <div class="col-lg-9 posts post3">
         </div>
-        <div class="col-lg-6 post 4">
-          <img src="https://folksmak.files.wordpress.com/2019/08/peach-feature.jpg" class="img-responsive"/>
+        <div class="w-100"></div>
+        <div class="col-lg-3 posts post4">
+        </div>
+        <div class="col-lg-6 posts post5">
         </div>
       </div>
     </div>
