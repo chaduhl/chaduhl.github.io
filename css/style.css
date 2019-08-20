@@ -3,7 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
-@import url('https://fonts.googleapis.com/css?family=Karla|Lato|Raleway:100,200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla|Lato:300,400,700|Raleway:100,200,300&display=swap');
 
 body{
   background-color:#f7f7f6;
@@ -49,6 +49,12 @@ h3 {
   font-weight:300;
 }
 
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size:1.2em;
+  font-weight:700;
+}
+
 h5 {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
@@ -64,7 +70,7 @@ p {
 }
 
 .line {
-  margin: 35px 0px 35px;
+  margin: 15px 0px 35px;
   height:3px;
   width:150px;
   background-color:#1285d3;
@@ -120,6 +126,7 @@ ul.navi {
   font-weight:200;
   font-size:.85em;
   color:black;
+  letter-spacing: 3px;
 }
 
 .navi li{
@@ -168,11 +175,19 @@ ul li a{
 /*!
  *  ABOUT
  */
-.intro {
-  margin-left:auto;
-  margin-right:auto;
-  text-align:left;
-  display:block;
+.about-img {
+  background-image: url("../img/chad.png");
+  background-position: top;
+  background-size: cover;
+  padding-bottom:50px;
+  width:100%;
+  height:400px;
+}
+
+@media screen and (min-width:2880px) {
+  .about-img {
+    height: 600px;
+  }
 }
 
 .btn-resume {
@@ -357,7 +372,6 @@ ul.social-menu li{
   height: 500px;
   padding: 0;
   margin-bottom: 0;
-  background-image: url('/img/wilcox_mockup_header_2.png');
   background-size:cover;
   background-position:center;
 }
