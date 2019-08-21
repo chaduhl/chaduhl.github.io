@@ -409,4 +409,16 @@ ul.social-menu li{
     visibility: visible;
   }
 
+  h1, h2, h3, p {
+    letter-spacing: normal;
+  }
+
+  .port-heading h2 {
+    font-size:2em;
+  }
+
+  .row {
+    padding:1.5rem;
+  }
+
 }
