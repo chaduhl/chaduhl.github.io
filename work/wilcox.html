@@ -45,17 +45,15 @@
       </a>
       <div id="mobile-nav">
         <a href="http://chaduhl.github.io/">PORTFOLIO</a>
-        <a href="/academia.html">ACADEMIA</a>
-        <a href="/about.html">ABOUT</a>
+        <a href="/academia.html">ABOUT</a>
       </div>
       <ul class="navi">
         <li><a href="http://chaduhl.github.io/">PORTFOLIO</a></li>
-        <li><a href="/academia.html">ACADEMIA</a></li>
-        <li><a href="/about.html">ABOUT</a></li>
+        <li><a href="/academia.html">ABOUT</a></li>
       </ul>
     </div>
 
-    <div class="container-fluid port-header-img" style="background-image: url('/img/wilcox_mockup_header_2.png');">
+    <div class="container-fluid port-header-img" style="background-image: url('/img/wilcox_cover.jpg');">
     </div>
 
     <div class="row justify-content-center port-heading">
@@ -81,7 +79,8 @@
         <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
           <h5>Software</h5>
           <ul class="software">
-            <li><i class="fab fa-sketch"></i>&ensp;Sketch</li>
+            <li><i class="fas fa-keyboard"></i>&ensp;Omeka S</li>
+            <li><i class="fab fa-sketch"></i>&ensp;OpenRefine</li>
             <li><i class="fab fa-invision"></i>&ensp;InVision</li>
             <li><i class="fab fa-adobe"></i>&ensp;Illustrator</li>
           </ul>
@@ -94,14 +93,10 @@
         <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
           <h5 style="color:white;">The Challenge</h5>
           <br>
-          <h2>How might I best structure this site to work for all types of visitors as well as the faculty,
-            staff, and students who will maintain it?
+          <h2>How might I best structure this site to work for all types of visitors as well as the faculty, staff, and students who will maintain it?
           </h2>
           <br>
-          <p>The faculty, staff, and students in my department are neither skilled designers nor programers,
-            so I needed to build a site with a content management system (CMS) that would be easily
-            accessible and mutable for them. Moreover, it needed to be attractive and functional for
-            both scholars and lay visitors.</p>
+          <p>The faculty, staff, and students in my department are neither skilled designers nor programers, so I needed to build a site with a content management system (CMS) that would be easily accessible and mutable for them. Moreover, it needed to be attractive and functional for both scholars and lay visitors.</p>
         </div>
       </div>
     </div>
@@ -116,9 +111,10 @@
             linked open data (LOD). I developed a custom theme for the site so
             that all users might have an enjoyable and efficient experience.
             Below are a few examples of the site's functionality, but you can
-            check it out yourself <a href="#">here</a>.
+            check it out yourself <a href="http://wilcoxcollection.ku.edu/">here</a>.
           </p>
-          <img class="img-responsive" src="/img/wilcox_mockup_header.png"/>
+          <br>
+          <img class="img-responsive" src="/img/wilcox_results_small.jpg"/>
         </div>
       </div>
     </div>
@@ -131,13 +127,53 @@
           <p>Starting from nothing was simultaneously exciting and overwhelming, but by narrowing down certain options, the task became approachable. First I needed to find a CMS that worked for the department's needs. After setting up the CMS came the the fun part: designing a user-centered experience for the site that would serve everyone, whether they were students, faculty, researchers, or regular visitors.</p>
           <br>
           <h5>Research</h5>
-          <p>Describe research done on ancient numismatics and the push toward LOD. Think also about including "market questions" to determine what students and faculty wanted.</p>
+          <p>
+            In my preliminary research into the field, I quickly became acquainted with <a href="http://nomisma.org/">Nomisma</a>, <a href="http://pelagios.org/">Pelagios</a>, and other linked-data initiatives aimed at uniting different collections of material culture across the globe in order to provide a  robust and comprehensive collection of data not only for scholars, but anyone interested in exploring ancient numismatics. These projects have duly affected how we are implementing our own project, which I describe below. Tied into these projects is an additional facet which we had not previously considered: XML description schema for our own coins. These sites pull in data from wide-ranging communities via XML documents which ensure that the data is appropriately segmented and readable by HTML, JavaScript, and other web-development languages, search engines, and machines in general. In order to do this appropriately, there needs to be a standard way of describing numismatic data, hence the dawn of the Numismatic Description Standard (NUDS). NUDS makes use of a custom XSD (an XML schema) to ensure that, if an institution or individual would like to contribute data to the linked-data community, they have the right schema by which to describe their collections.
+            <br></br>
+            Connected with these is Numishare, a back-end software that drives numismatic-oriented sites like <a href="http://numismatics.org/search/">Mantis</a>, a division of the American Numismatics Society, as well as the following projects:</p>
+            <ul class="body-list">
+              <li><a href="http://numismatics.org/ocre/">Online Coins of the Roman Empire (OCRE)</a></li>
+              <li><a href="http://numismatics.org/crro/">Coinage of the Roman Republic Online (CRRO)</a></li>
+              <li><a href="http://numismatics.org/pella/">Coinage of the Kings of Macedonia (PELLA)</a></li>
+              <li><a href="">Seleucid Coins Online</a></li>
+            </ul>
+            <br>
+            <p>
+            After learning about the work being done in ancient numismatics and LOD, I started investigating several different web server options for the project, often attempting to implement the software in order to evaluate its fit to our aims. We had very few resources at our disposal to bring this project to fruition, so we attempted to investigate any route that seemed viable. Starting with relatively common platforms like Wordpress and Omeka, the latter of which is often used for creating online collections or curations of objects, we soon realized that these fell short of our specific needs. A moment of success came with the discovery of an open-source project called CollectiveAccess. This software seemed like the best option for a time, however, it paled in comparison to Numishare. In the end we settled on the relatively new Omeka S, which promised posibilities of Linked Open Data (LOD), an easy-to-use interface, and widespread familiarity in the university community.</p>
+          <br>
+
+          <h5>Creating Goals</h5>
+          <p></p>
+          <ol>
+            <li>
+              Fully document and photograph all coins held within the Wilcox Collection so that we may not only make the collection more accessible, but also for archival purposes.
+            </li>
+            <li>
+              Fully describe the numismatic data of the collection in order to implement a searchable, data-driven website accessible to all.
+            </li>
+            <li>
+              Provide faculty and graduate teaching assistants at the University of Kansas with an efficient, impactful, and robust way to access the ancient coins and artifacts of the Wilcox Collection for both pedagogy and research.
+            </li>
+            <li>
+              Maintain a site that allows all users to access the collection and make  specific queries about the metadata.
+            </li>
+            <li>
+              Connect the database of the Wilcox Collection with the linked-data projects Nomisma, Pelagios, and any others that may be relevant to the study of numismatics or ancient material culture.
+            </li>
+          </ol>
+
           <br>
           <h5>Choosing the CMS</h5>
-          <p>Explain why Omeka S was the logical option given budget, resources, and future plans.</p>
+          <p>
+            Although we originally wanted to use Numishare, software developed by Ethan Gruber and the American Numismatic Society for ancient numismatistic collections, it was too complex and unique for the university's IT department. Our overall goal for the project was to create a sustainable way of displaying and sharing our collections.
+            <br></br>
+            Given these circumstances, our next best choice was the relatively new Omeka S, which provides an easy-to-use admin center and is widely used across university systems. The best thing about Omeka S is it's focus on metadata and LOD ontologies for collections.
+          </p>
           <br>
-          <h5>Post-CMS Blues</h5>
-          <p>Stuck with basic theme.</p>
+          <h5>Current State</h5>
+          <p>
+            Now that we have all of the essential foundations in place for the new site, we have been working on documenting all the coins, cleaning metadata, and building new databases for all our collections. While this project was initially only concerned with the numismatic collection, we have decided to expand it to encompass the museum's artifacts and plaster casts.
+          </p>
         </div>
       </div>
     </div>
