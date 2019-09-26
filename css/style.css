@@ -153,6 +153,8 @@ ul li a{
 .nav-wrap h1{
   font-family:'Raleway', sans-serif;
   font-weight: 100;
+  font-size:1.5em;
+  letter-spacing: 3px;
 }
 
 .nav-wrap li{
@@ -173,6 +175,10 @@ ul li a{
   margin-left:auto;
   margin-right:auto;
   width: 50%;
+}
+
+.salutation h2 {
+  font-weight:100;
 }
 
 /*!
@@ -282,7 +288,7 @@ ul.social-menu li{
  */
 
 .row {
-  padding:1.5rem;
+  padding: 0 30px 30px;
 }
 
 .hovereffect {
@@ -443,6 +449,21 @@ ul.social-menu li{
 
   .row {
     padding:1.5rem;
+  }
+
+  .salutation {
+    width: 80%;
+  }
+  .salutation h2 {
+    font-size: 1.5em;
+  }
+
+  .row {
+    padding: 0 0 0;
+  }
+
+  .container-fluid {
+    padding-bottom: 50px;
   }
 
 }
