@@ -69,6 +69,10 @@ p {
   font-size: 1.1em;
 }
 
+.row {
+  padding:1.5rem;
+}
+
 .line {
   margin: 15px 0px 35px;
   height:3px;
@@ -287,7 +291,7 @@ ul.social-menu li{
  *  PORTFOLIO
  */
 
-.row {
+.portfolio .row {
   padding: 0 30px 30px;
 }
 
@@ -458,7 +462,7 @@ ul.social-menu li{
     font-size: 1.5em;
   }
 
-  .row {
+  .portfolio .row {
     padding: 0 0 0;
   }
 
