@@ -10,6 +10,11 @@ body{
   margin: 0px, 50px, 100px;
 }
 
+footer p{
+  text-align: center;
+  color: #b5b5b5;
+}
+
 img {
   max-width:100%;
   height:auto;
